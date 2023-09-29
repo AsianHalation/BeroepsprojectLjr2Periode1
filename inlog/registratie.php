@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="inputs">
-                    <input type="button" value="inloggen"><br>
+                    <input type="button" href="index.html" value="inloggen"><br>
                     <input type="submit" value="Registreer">
                 </div>
             </form>

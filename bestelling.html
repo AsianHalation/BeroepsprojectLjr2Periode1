@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleding Bestelpagina</title>
+    <link rel="stylesheet" href="bestelling.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kleding Bestellen</h1>
+        <form>
+            <label for="product">Kledingstuk:</label>
+            <input type="text" id="product" name="product" required>
+
+            <label for="size">Maat:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="x-large">X-Large</option>
+            </select>
+
+            <label for="color">Kleur:</label>
+            <input type="text" id="color" name="color" required>
+
+            <label for="quantity">Aantal:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="shipping">Verzendmethode:</label>
+            <select id="shipping" name="shipping">
+                <option value="standaard">Standaard verzending</option>
+                <option value="express">Express verzending</option>
+            </select>
+
+            <label for="comments">Opmerkingen:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Bestellen</button>
+        </form>
+    </div>
+</body>
+</html>

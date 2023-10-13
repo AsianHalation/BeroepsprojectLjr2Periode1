@@ -7,7 +7,7 @@
       $email = $_POST['email'];
       $wachtwoord = $_POST['wachtwoord'];
       $conn->query(
-          "INSERT INTO `klanten`(`naam`, `email`, `wachtwoord`) 
+          "INSERT INTO `klanten`(`Naam`, `Email`, `Wachtwoord`) 
                                       VALUES ('$naam', '$email', $wachtwoord);");
 
     }

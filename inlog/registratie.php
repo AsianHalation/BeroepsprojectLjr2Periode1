@@ -1,10 +1,4 @@
-<html>
-    <head>
-    <title>connectie</title>
-</head>
-
-<body>
-    <?php
+<?php
 
     include "../Database/database.php";
 
@@ -14,14 +8,9 @@
       $wachtwoord = $_POST['wachtwoord'];
       $conn->query(
           "INSERT INTO `klanten`(`naam`, `email`, `wachtwoord`) 
-                                      VALUES ('$naam', '$email', $wachtwoord);"
-      );
+                                      VALUES ('$naam', '$email', $wachtwoord);");
 
     }
 
     header("Location:../hoofdpagina/hoofdpagina.html");
-    ?>
-
-</body>
-
-</html>
+?>

@@ -21,7 +21,7 @@
             PDO::ATTR_EMULATE_PREPARES   => false,
         ];
         try {
-            $conn = new PDO($dsn, $user, $pass, $options);
+            $pdo = new PDO($dsn, $user, $pass, $options);
             echo "balls";
         } catch (Exception $e) {
             die("Failed to open database connection, did you start it and configure the credentials properly?");
